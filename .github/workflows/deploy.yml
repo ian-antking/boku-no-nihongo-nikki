@@ -33,7 +33,7 @@ jobs:
           hexo generate
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
         with:
           branch: gh-pages
           folder: ./public
