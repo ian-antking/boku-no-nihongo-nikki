@@ -36,9 +36,6 @@ jobs:
           hexo clean
           hexo generate
 
-      - name: Create CNAME file
-        run: echo 'blog.antking.co' > public/CNAME
-
       - name: Upload public directory as artifact
         uses: actions/upload-pages-artifact@v3
         with:
