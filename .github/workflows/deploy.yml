@@ -1,0 +1,35 @@
+name: Build and Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install --save-dev hexo-renderer-sass  # if required by your theme
+
+      - name: Build Hexo site
+        run: |
+          hexo clean
+          hexo generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public 
