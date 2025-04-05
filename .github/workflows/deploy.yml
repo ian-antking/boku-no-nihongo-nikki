@@ -3,7 +3,7 @@ name: Build and Deploy Hexo to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   build:
@@ -35,6 +35,26 @@ jobs:
         run: |
           hexo clean
           hexo generate
+
+      - name: Upload public directory as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: github-pages
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: github-pages
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
