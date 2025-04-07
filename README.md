@@ -38,5 +38,11 @@ The site is accessible at `blog.antking.co`.
 ## Optimising images
 
 ```bash
-magick "$image" -resize 1600x1600\> -strip -quality 85 "$output"
+magick IMAGE_PATH \
+  -auto-orient \
+  -resize 'x600>' \
+  -resize '1200x>' \
+  -strip \
+  -quality 85 \
+  OUTPUT_PATH.webp
 ```
