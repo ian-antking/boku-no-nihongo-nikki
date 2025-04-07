@@ -34,3 +34,9 @@ This site is automatically deployed using GitHub Actions. Each push to the `main
 ## Custom Domain
 
 The site is accessible at `blog.antking.co`.
+
+## Optimising images
+
+```bash
+magick "$image" -resize 1600x1600\> -strip -quality 85 "$output"
+```
