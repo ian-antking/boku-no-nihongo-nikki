@@ -24,7 +24,7 @@ custom_file_path:
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyStart: source/_data/post-body-start.njk
-  postBodyEnd: source/_data/injects/post/footer.swig
+  #postBodyEnd: source/_data/injects/post/footer.swig
   #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
@@ -671,7 +671,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  active: isso
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -745,7 +745,7 @@ utterances:
 
 # Isso
 # For more information: https://isso-comments.de
-isso: # <data_isso>
+isso: https://comments.stronkbear.gay/
 
 
 # ---------------------------------------------------------------
