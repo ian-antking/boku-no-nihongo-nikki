@@ -6,7 +6,7 @@ tags: [アマ相撲]
 
 <!-- markdownlint-disable no-inline-html -->
 <figure>
-  <img src="/images/2026-09-16/first-sumo-match.webp" alt="黄色と黒のショーツをはいた僕が、相手と組み合っている。">
+  <img src="/images/2026-09-15/first_sumo_match.webp" alt="黄色と黒のショーツをはいた僕が、相手と組み合っている。">
   <figcaption>初めての取組！💪 相手を前に押そうとしている。</figcaption>
 </figure>
 
@@ -15,6 +15,6 @@ tags: [アマ相撲]
 
 <!-- markdownlint-disable no-inline-html --><!-- markdownlint-disable no-inline-html --><!-- markdownlint-disable no-inline-html -->
 <figure>
-  <img src="/images/2026-09-16/second-sumo-match.webp" alt="黄色と黒のショーツをはいた僕が相手に押し倒されて、相手が僕の上に倒れている。">
+  <img src="/images/2026-09-15/second_sumo_match.webp" alt="黄色と黒のショーツをはいた僕が相手に押し倒されて、相手が僕の上に倒れている。">
   <figcaption>二番目の取組はすごかった！💥 相手に押し倒されちゃった！😅</figcaption>
 </figure>
